@@ -2,6 +2,7 @@
   import { goto } from '$app/navigation';
   import { page } from '$app/stores';
   import OnboardingHello from '$lib/components/onboarding-page/onboarding-hello.svelte';
+  import OnboardingPrivacy from '$lib/components/onboarding-page/onboarding-privacy.svelte';
   import OnboadingStorageTemplate from '$lib/components/onboarding-page/onboarding-storage-template.svelte';
   import OnboardingTheme from '$lib/components/onboarding-page/onboarding-theme.svelte';
   import { AppRoute, QueryParameter } from '$lib/constants';
@@ -11,12 +12,17 @@
 
   interface OnboardingStep {
     name: string;
-    component: typeof OnboardingHello | typeof OnboardingTheme | typeof OnboadingStorageTemplate;
+    component:
+      | typeof OnboardingHello
+      | typeof OnboardingTheme
+      | typeof OnboadingStorageTemplate
+      | typeof OnboardingPrivacy;
   }
 
   const onboardingSteps: OnboardingStep[] = [
     { name: 'hello', component: OnboardingHello },
     { name: 'theme', component: OnboardingTheme },
+    { name: 'privacy', component: OnboardingPrivacy },
     { name: 'storage', component: OnboadingStorageTemplate },
   ];
 

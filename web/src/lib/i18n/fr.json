@@ -867,6 +867,7 @@
   "ok": "Ok",
   "oldest_first": "Anciens en premier",
   "onboarding": "Accueil",
+  "onboarding_privacy_description": "Pour fonctionner correctement, Immich utilise des services tiers tels qu'un fournisseur de tuiles utilisé pour afficher la carte et Github pour détecter les nouvelles versions",
   "onboarding_theme_description": "Choisissez un thème de couleur pour votre instance. Vous pouvez le changer plus tard dans vos paramètres.",
   "onboarding_welcome_description": "Mettons votre instance en place avec quelques paramètres communs.",
   "onboarding_welcome_user": "Bienvenue {user}",
