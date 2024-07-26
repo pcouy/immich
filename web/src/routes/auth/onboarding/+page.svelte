@@ -55,8 +55,8 @@
     <div class="w-full min-w-screen py-8 flex h-full place-content-center place-items-center">
       <svelte:component
         this={onboardingSteps[index].component}
-        on:done={handleDoneClicked}
-        on:previous={handlePrevious}
+        onDone={handleDoneClicked}
+        onPrevious={handlePrevious}
       />
     </div>
   </div>
